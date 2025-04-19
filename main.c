@@ -3,7 +3,8 @@
 #include "tool.h"
 #include "run.h"
 
-
+void leftwalk(void);
+void rightwalk(void);
 
 int count = 0; 
 
@@ -13,7 +14,7 @@ void main()
     pin();
     while(1)
     {
-        feet_on(2,50,2,0);
+     feet_on(1, 90, 1, 20);
     }
 }
 

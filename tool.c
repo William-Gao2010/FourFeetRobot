@@ -1,3 +1,4 @@
+
 #include <STC8G.H>
 #include "intrins.h"
 #include "tool.h"
@@ -102,19 +103,21 @@ void speed(int degree1,int degree2,int degree3,int degree4,int level,int mode,bi
                 Delay1ms(5*level);
             }
             
-				sec(1);		
+			sec(1);
 						
             if(re)
             {
 								
 							
-								pmw_degree(1,0);
+				pmw_degree(1,0);
                 pmw_degree(2,0);
                 pmw_degree(3,0);
                 pmw_degree(4,0);
                 
-                sec(1);		  
+                 
             }
+            sec(1);
+            break;
 
         case 2:
             pmw_degree(1,degree1);
@@ -128,14 +131,14 @@ void speed(int degree1,int degree2,int degree3,int degree4,int level,int mode,bi
             {
 							
 								
-								pmw_degree(1,0);
+				pmw_degree(1,0);
                 pmw_degree(2,0);
                 pmw_degree(3,0);
                 pmw_degree(4,0);
                 sec(1);		
 								
             }
-            
+            break;
 
     }
 }
